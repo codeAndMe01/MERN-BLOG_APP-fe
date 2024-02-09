@@ -26,7 +26,7 @@ const Auth = () => {
   }
 
   async function sendRequest(type='login'){
-    const res = await axios.post(`https://blog-app-bk.onrender.com//${type}`,{
+    const res = await axios.post(`https://blog-app-bk.onrender.com/${type}`,{
       name:inpts.name,
       email: inpts.email,
       password : inpts.password
@@ -99,7 +99,7 @@ const Auth = () => {
             onClick={() => setSignUp(!isSignUp)}
             sx={{ borderRadius: 3, marginTop: 3, marginBottom: 3 }}
           >
-            Change To {isSignUp ? "Login" : "SignUp"}
+             {isSignUp ? "Alreday have an account? Login" : "Dont have account? SignUp"}
           </Button>
         </Box>
       </form>

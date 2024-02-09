@@ -7,7 +7,7 @@ const Blogs = () => {
   const [blogs,setBlogs] =useState()
 
   const  sendRequest = async () =>{
-     const res =  await axios.get('https://blog-app-bk.onrender.com//blogs')
+     const res =  await axios.get('https://blog-app-bk.onrender.com/blogs')
                   .catch((err)=> console.log(err))
 
             //  console.log(res)     

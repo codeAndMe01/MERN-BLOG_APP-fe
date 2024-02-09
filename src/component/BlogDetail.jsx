@@ -23,7 +23,7 @@ const BlogDetail = () => {
 
   const fetchDetails = async () => {
     const res = await axios
-      .get(`http://localhost:8080/blog/${id}`)
+      .get(`https://blog-app-bk.onrender.com/blog/${id}`)
       .catch((err) => console.log("error in getting data", err));
 
     const data = await res.data;
